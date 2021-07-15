@@ -1,0 +1,48 @@
+Functional and non-functional requirements:
+ * Functional:
+   - Income/Outcome category:
+    1. Displaying the value of total income at current month.
+    
+    2. Displaying the value of total outcome at current month.
+    
+    3. Displaying the amount of available funds.
+    
+    4. Displaying the name and year of current month (with option to change month).
+    
+    5. Displaying the number of days to end of the month.
+    
+    6. Pie chart with total outomes.
+    
+    7. Displaying the amount of outcomes planed in this month.
+    
+    8. Table comparing outcomes from 3 last month.
+    
+    9. Option to adding income by customer.
+    
+    10. Option to adding outcome by customer.
+    
+    11. Option to adding income category by customer.
+    
+    12. Option to adding outcome category by customer.
+    
+    13. Automatic additions incomes/outcomes from month bank list.
+    
+    
+    
+   - Savings category:
+   1. Displaying the value of total savings.
+   
+   2. Pie chart with total savings.
+   
+   3. Option to adding income by customer.
+    
+   4. Option to adding outcome by customer.
+    
+   5. Option to adding income category by customer.
+    
+   6. Option to adding outcome category by customer.
+   
+   7. List with gouls. 
+   
+  * Non-Functional:
+   
