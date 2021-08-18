@@ -7,3 +7,4 @@
 /target/classes/pl/budgetplan/Main.class
 /target/maven-archiver/pom.properties
 /target/classes/schema.sql
+/.idea/*
