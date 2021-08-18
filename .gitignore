@@ -1,1 +1,9 @@
 /target/BudgetPlan-1.0-SNAPSHOT.jar
+/target/classes/data.sql
+/target/BudgetPlan-1.0-SNAPSHOT.jar.original
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/target/classes/pl/budgetplan/Main.class
+/target/maven-archiver/pom.properties
+/target/classes/schema.sql
