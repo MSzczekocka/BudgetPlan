@@ -6,6 +6,11 @@ Feature: Add Budget Type
     | "Savings for an Apartment" |
   Then Budget Type should be added
 
+Feature: Show Budget Type Details
+  Given User is on Budget Type page
+  When User click on Budget Type with ID 1
+  Then Budget Type Details page should be open
+
 Feature: Delete Budget Type
   Given User is on Budget Type Details page
   When User picking Budget Type with ID
