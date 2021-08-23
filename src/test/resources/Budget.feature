@@ -1,5 +1,5 @@
 Feature: Add Budget
-  Given User is on adding Budget page
+  Given User is on Budget page
   When User enters following operation details
     | "Spending Money" | 1 |
     | "Basic Savings" | 2 |
@@ -8,7 +8,7 @@ Feature: Add Budget
   Then Budget should be added
 
 Feature: Delete Budget
-  Given User is on deleting Budget page
+  Given User is on Budget Details page
   When User picking Budget with ID
     | 3 |
   Then Budget should be deleted
