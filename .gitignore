@@ -8,3 +8,4 @@
 /target/maven-archiver/pom.properties
 /target/classes/schema.sql
 /.idea/*
+/target/test-classes/Operation.feature
