@@ -4,7 +4,7 @@ Feature: Add Category
     | "Eating Out" | "Yellow" |
     | "Basic Savings" | "Green" |
     | "Clothes" | "Red" |
-    | "Incomes" | "Blue" |
+    | "Salary" | "Blue" |
   Then Category should be added
 
 Feature: Delete Category

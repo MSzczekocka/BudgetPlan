@@ -1,10 +1,10 @@
 Feature: Add Budget
   Given User is on adding Budget page
   When User enters following operation details
-    | "Eating Out" | 1 |
-    | "Basic Savings" | 2|
-    | "Clothes" | 1 |
-    | "Incomes" | 1 |
+    | "Spending Money" | 1 |
+    | "Basic Savings" | 2 |
+    | "Bills" | 1 |
+    | "Regular Incomes" | 1 |
   Then Budget should be added
 
 Feature: Delete Budget
