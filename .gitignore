@@ -13,3 +13,4 @@
 /target/test-classes/BudgetType.feature
 /target/test-classes/Category.feature
 /target/test-classes/OperationType.feature
+/target/test-classes/com/example/cucumber/BudgetTypeStepdefs.class
