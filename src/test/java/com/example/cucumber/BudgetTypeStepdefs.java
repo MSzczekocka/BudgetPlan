@@ -47,7 +47,7 @@ public class BudgetTypeStepdefs {
 
     @Then("Budget Type should be deleted")
     public void budgetTypeShouldBeDeleted(int budgetTypeID) {
-        assertEquals(budgetType.searchBudgetType(budgetTypeID));
+        assertEquals(budgetType.searchBudgetType(budgetTypeID)==null);
     }
 
 }
