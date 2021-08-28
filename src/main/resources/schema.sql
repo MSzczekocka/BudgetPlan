@@ -20,13 +20,14 @@ CREATE TABLE "Budget" (
 	"idBudget" SERIAL PRIMARY KEY,
 	"nameBudget" TEXT NOT null,
 	"idBudgetType" INTEGER,
-	foreign key ("idBudgetType") references "BudgetType" ("idBudgetType)
+	foreign key ("idBudgetType") references "BudgetType" ("idBudgetType")
 );
 
 CREATE TABLE "Operation" (
 	"idOperation" SERIAL PRIMARY KEY,
 	"amountOperation" FLOAT NOT null,
 	"descriptionOperation" text not null,
+	"dateOperation" date not null,
 	"idBudget" INTEGER,
 	"idCategory" INTEGER,
 	"idOperationType" INTEGER,

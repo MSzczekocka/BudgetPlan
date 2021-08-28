@@ -8,3 +8,11 @@
 /target/maven-archiver/pom.properties
 /target/classes/schema.sql
 /.idea/*
+/target/test-classes/Operation.feature
+/target/test-classes/Budget.feature
+/target/test-classes/BudgetType.feature
+/target/test-classes/Category.feature
+/target/test-classes/OperationType.feature
+/target/test-classes/com/example/cucumber/BudgetTypeStepdefs.class
+/target/test-classes/HelloWorld.feature
+/target/test-classes/com/example/cucumber/HelloWorldStepdefs.class
