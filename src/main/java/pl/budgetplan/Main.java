@@ -7,6 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
-        System.out.println("Hello world");
+        Main main = new Main();
+        String name = "world";
+        main.HelloWorld(name);
+    }
+
+    public String HelloWorld(String name){
+        return "Hello " + name;
     }
 }
+
