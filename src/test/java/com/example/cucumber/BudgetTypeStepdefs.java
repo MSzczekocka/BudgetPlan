@@ -3,13 +3,12 @@ package com.example.cucumber;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 import java.sql.Connection;
 import java.util.List;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertThat;
-
+import static org.junit.Assert.*;
 
 
 public class BudgetTypeStepdefs {
