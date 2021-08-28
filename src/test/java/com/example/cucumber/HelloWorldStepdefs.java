@@ -19,7 +19,7 @@ public class HelloWorldStepdefs {
     @When("I start program")
     public void iStartProgram() {
         Main main = new Main();
-        greetings =main.HelloWorld(name);
+        greetings =main.helloWorld(name);
     }
 
     @Then("I should be told {string}")

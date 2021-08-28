@@ -9,10 +9,10 @@ public class Main {
         SpringApplication.run(Main.class, args);
         Main main = new Main();
         String name = "world";
-        main.HelloWorld(name);
+        main.helloWorld(name);
     }
 
-    public String HelloWorld(String name){
+    public String helloWorld(String name){
         return "Hello " + name;
     }
 }
