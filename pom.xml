@@ -12,6 +12,7 @@
             <artifactId>spring-boot-starter</artifactId>
             <version>2.5.2</version>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -45,7 +46,9 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>16</source>
                     <target>16</target>
@@ -54,9 +57,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>pl.budgetplan.Main</mainClass>
-                </configuration>
+                <version>2.4.3</version>
                 <executions>
                     <execution>
                         <goals>
