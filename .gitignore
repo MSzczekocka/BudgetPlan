@@ -17,3 +17,6 @@
 /target/test-classes/HelloWorld.feature
 /target/test-classes/com/example/cucumber/HelloWorldStepdefs.class
 /target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/target/classes/pl/budgetplan/BudgetType.class
+/target/classes/pl/budgetplan/BudgetTypeCommandLineRunner.class
+/target/classes/pl/budgetplan/BudgetTypeRepository.class
