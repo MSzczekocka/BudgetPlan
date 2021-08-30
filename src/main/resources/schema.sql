@@ -1,44 +1,44 @@
-CREATE TABLE BudgetType
+CREATE TABLE budget_type
 (
-    idBudgetType   SERIAL PRIMARY KEY NOT NULL,
-    nameBudgetType TEXT               NOT NULL
+    id_budget_type   SERIAL PRIMARY KEY NOT NULL,
+    name_budget_type TEXT               NOT NULL
 );
 
-CREATE TABLE Category
+CREATE TABLE category
 (
-    idCategory    SERIAL PRIMARY KEY,
-    nameCategory  TEXT NOT null,
-    colorCategory text not NULL
+    id_category    SERIAL PRIMARY KEY,
+    name_category  TEXT NOT null,
+    color_category text not NULL
 );
 
-CREATE TABLE OperationType
+CREATE TABLE operation_type
 (
-    idOperationType   SERIAL PRIMARY KEY,
-    nameOperationType TEXT NOT null
+    id_operation_type   SERIAL PRIMARY KEY,
+    name_operation_type TEXT NOT null
 );
 
-CREATE TABLE Budget
+CREATE TABLE budget
 (
-    idBudget     SERIAL PRIMARY KEY,
-    nameBudget   TEXT NOT null,
-    idBudgetType INTEGER,
-    foreign key (idBudgetType) references BudgetType (idBudgetType)
+    id_budget     SERIAL PRIMARY KEY,
+    name_budget   TEXT NOT null,
+    id_budget_type INTEGER,
+    foreign key (id_budget_type) references budget_type (id_budget_type)
 );
 
 
 
-CREATE TABLE Operation
+CREATE TABLE operation
 (
-    idOperation         SERIAL PRIMARY KEY,
-    amountOperation      FLOAT NOT null,
-    descriptionOperation text  not null,
-    dateOperation        date  not null,
-    idBudget            INTEGER,
-    idCategory           INTEGER,
-    idOperationType      INTEGER,
-    foreign key (idBudget) references Budget (idBudget),
-    foreign key (idCategory) references Category (idCategory),
-    foreign key (idOperationType) references OperationType (idOperationType)
+    id_operation         SERIAL PRIMARY KEY,
+    amount_operation      FLOAT NOT null,
+    description_operation text  not null,
+    date_operation        date  not null,
+    id_budget            INTEGER,
+    id_category           INTEGER,
+    id_operation_type      INTEGER,
+    foreign key (id_budget) references budget (id_budget),
+    foreign key (id_category) references category (id_category),
+    foreign key (id_operation_type) references operation_type (id_operation_type)
 );
 
 
