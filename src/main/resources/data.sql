@@ -1,3 +1,3 @@
-insert into BudgetType (nameBudgetType) values ('Basic Accounts');
-insert into BudgetType(nameBudgetType) values ('Basic Savings');
-insert into BudgetType(nameBudgetType) values ('Investment Account');
+insert into budget_type (name_budget_type) values ('Basic Accounts');
+insert into budget_type(name_budget_type) values ('Basic Savings');
+insert into budget_type(name_budget_type) values ('Investment Account');
