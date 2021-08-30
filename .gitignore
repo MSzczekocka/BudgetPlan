@@ -20,3 +20,4 @@
 /target/classes/pl/budgetplan/BudgetType.class
 /target/classes/pl/budgetplan/BudgetTypeCommandLineRunner.class
 /target/classes/pl/budgetplan/BudgetTypeRepository.class
+/target/classes/application.properties

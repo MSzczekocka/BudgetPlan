@@ -10,7 +10,7 @@ public class BudgetType {
     private @Id @GeneratedValue int budgetTypeId;
     private String budgetTypeName;
 
-// Constructor for String BudgetTypeName.
+// Constructor for String BudgetTypeName. ID not in constructor - not given during creating object.
     public BudgetType(String budgetTypeName) {
         this.budgetTypeName = budgetTypeName;
     }
