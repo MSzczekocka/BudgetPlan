@@ -8,3 +8,17 @@
 /target/maven-archiver/pom.properties
 /target/classes/schema.sql
 /.idea/*
+/target/test-classes/Operation.feature
+/target/test-classes/Budget.feature
+/target/test-classes/BudgetType.feature
+/target/test-classes/Category.feature
+/target/test-classes/OperationType.feature
+/target/test-classes/com/example/cucumber/BudgetTypeStepdefs.class
+/target/test-classes/HelloWorld.feature
+/target/test-classes/com/example/cucumber/HelloWorldStepdefs.class
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/target/classes/pl/budgetplan/BudgetType.class
+/target/classes/pl/budgetplan/BudgetTypeCommandLineRunner.class
+/target/classes/pl/budgetplan/BudgetTypeRepository.class
+/target/classes/application.properties
+/target/classes/pl/budgetplan/BudgetTypeRestController.class
