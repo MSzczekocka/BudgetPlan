@@ -1,9 +1,10 @@
 package pl.budgetplan;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 
 public interface BudgetTypeRepository extends JpaRepository<BudgetType, Integer> {
-    Collection<BudgetType> findNameBudgetType(String nameBudgetType);
+    Collection<BudgetType> findByNameBudgetType(String nameBudgetType);
 }

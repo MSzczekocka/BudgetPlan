@@ -6,12 +6,14 @@ import javax.persistence.Id;
 
 @Entity
 public class BudgetType {
-
-    private @Id @GeneratedValue int idBudgetType;
+    @Id
+    @GeneratedValue
+    private int idBudgetType;
     private String nameBudgetType;
 
 // Constructor
     public BudgetType(String nameBudgetType) {
+        super();
         this.nameBudgetType = nameBudgetType;
     }
 
