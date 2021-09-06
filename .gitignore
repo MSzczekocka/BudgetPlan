@@ -23,3 +23,4 @@
 /target/classes/application.properties
 /target/classes/pl/budgetplan/BudgetTypeRestController.class
 /target/test-classes/BudgetTypeGet.feature
+/target/test-classes/com/example/cucumber/BudgetTypeGetStepdefs.class
