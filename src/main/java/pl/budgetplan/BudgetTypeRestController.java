@@ -1,18 +1,20 @@
 package pl.budgetplan;
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
 @RestController
+@AllArgsConstructor
 public class BudgetTypeRestController {
     @Autowired
-    BudgetTypeRepository budgetTypeRepository;
+    private final BudgetTypeRepository budgetTypeRepository;
 
-    @RequestMapping("/budgettypes")
-    Collection<BudgetType> budgetTypes(){
+    @GetMapping("/budgettypes")
+    @ResponseBody
+    public Collection<BudgetType> budgetTypes(){
         return this.budgetTypeRepository.findAll();
     }
 }

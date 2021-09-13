@@ -1,5 +1,7 @@
 package pl.budgetplan;
 
+import org.springframework.beans.factory.annotation.Value;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,6 +11,7 @@ public class BudgetType {
     @Id
     @GeneratedValue
     private int idBudgetType;
+    @Value("Main Account")
     private String nameBudgetType;
 
     public BudgetType(String nameBudgetType) {
