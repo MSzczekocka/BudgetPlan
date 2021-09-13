@@ -1,5 +1,7 @@
 package pl.budgetplan;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
 
 import javax.persistence.Entity;
@@ -7,11 +9,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
+@Getter
+@Setter
 public class BudgetType {
     @Id
     @GeneratedValue
     private int idBudgetType;
-    @Value("Main Account")
     private String nameBudgetType;
 
     public BudgetType(String nameBudgetType) {
@@ -22,22 +25,6 @@ public class BudgetType {
     public BudgetType(){
     }
 
-
-    public int getIdBudgetType() {
-        return idBudgetType;
-    }
-
-    public String getNameBudgetType() {
-        return nameBudgetType;
-    }
-
-    public void setIdBudgetType(int idBudgetType) {
-        this.idBudgetType = idBudgetType;
-    }
-
-    public void setNameBudgetType(String nameBudgetType) {
-        this.nameBudgetType = nameBudgetType;
-    }
 
     @Override
     public String toString() {
