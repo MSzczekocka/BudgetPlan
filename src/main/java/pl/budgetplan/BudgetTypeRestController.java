@@ -10,13 +10,12 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 public class BudgetTypeRestController {
-//    @Autowired
-//    private final BudgetTypeRepository budgetTypeRepository;
+    @Autowired
+    private final BudgetTypeRepository budgetTypeRepository;
 
     @GetMapping("/budget-types")
     public List<BudgetType> getBudgetTypes(){
-        return null;
-//        return this.budgetTypeRepository.findAll();
+        return this.budgetTypeRepository.findAll();
     }
 
     @GetMapping("/budget-types/{idBudgetType}")
