@@ -10,6 +10,7 @@ public class Main {
         SpringApplication.run(Main.class, args);
     }
 
+
     public String helloWorld(String name) {
         return "Hello " + name;
     }
