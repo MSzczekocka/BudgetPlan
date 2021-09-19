@@ -28,3 +28,15 @@
 /target/classes/pl/budgetplan/model/BudgetType.class
 /target/classes/pl/budgetplan/controller/BudgetTypeController.class
 /target/classes/pl/budgetplan/repository/BudgetTypeRepository.class
+/target/classes/com/budgetplan/demo/controller/BudgetTypeController.class
+/target/classes/com/budgetplan/demo/entity/BudgetType.class
+/target/classes/com/budgetplan/demo/repository/BudgetTypeRepository.class
+/target/classes/com/budgetplan/demo/Main.class
+/target/demo-0.0.1-SNAPSHOT.jar.original
+/target/demo-0.0.1-SNAPSHOT.jar
+/target/classes/com/budgetplan/demo/config/Config.class
+/budzetplan.iml
+/target/classes/com/budgetplan/demo/service/BudgetTypeService.class
+/target/test-classes/com/budgetplan/demo/BudgetTypeGetMyStepdefs.class
+/target/test-classes/com/budgetplan/demo/DemoApplicationTests.class
+/target/test-classes/com/budgetplan/demo/BudgetTypeControllerTest.class
