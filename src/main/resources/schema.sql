@@ -1,38 +1,42 @@
-create schema public;
-
-CREATE TABLE "BudgetType" (
-	"idBudgetType" SERIAL PRIMARY KEY NOT NULL,
-	"nameBudgetType" TEXT NOT NULL
+CREATE TABLE budget_type
+(
+    id_budget_type   INT AUTO_INCREMENT PRIMARY KEY,
+    name_budget_type VARCHAR(400)               NOT NULL
 );
 
-CREATE TABLE "Category" (
-	"idCategory" SERIAL PRIMARY KEY,
-	"nameCategory" TEXT NOT null,
-	"colorCategory" text not NULL
+CREATE TABLE category
+(
+    id_category    INT AUTO_INCREMENT PRIMARY KEY,
+    name_category  VARCHAR(400) NOT NULL,
+    color_category VARCHAR(400) not NULL
 );
 
-CREATE TABLE "OperationType" (
-	"idOperationType" SERIAL PRIMARY KEY,
-	"nameOperationType" TEXT NOT null
+CREATE TABLE operation_type
+(
+    id_operation_type   INT AUTO_INCREMENT PRIMARY KEY,
+    name_operation_type VARCHAR(400) NOT NULL
 );
 
-CREATE TABLE "Budget" (
-	"idBudget" SERIAL PRIMARY KEY,
-	"nameBudget" TEXT NOT null,
-	"idBudgetType" INTEGER,
-	foreign key ("idBudgetType") references "BudgetType" ("idBudgetType)
-);
-
-CREATE TABLE "Operation" (
-	"idOperation" SERIAL PRIMARY KEY,
-	"amountOperation" FLOAT NOT null,
-	"descriptionOperation" text not null,
-	"idBudget" INTEGER,
-	"idCategory" INTEGER,
-	"idOperationType" INTEGER,
-	foreign key ("idBudget") references "Budget" ("idBudget"),
-	foreign key ("idCategory") references "Category" ("idCategory"),
-	foreign key ("idOperationType") references "OperationType" ("idOperationType")
+CREATE TABLE budget
+(
+    id_budget     INT AUTO_INCREMENT PRIMARY KEY,
+    name_budget   VARCHAR(400) NOT NULL,
+    id_budget_type INTEGER,
+    FOREIGN KEY (id_budget_type) REFERENCES budget_type (id_budget_type)
 );
 
 
+
+CREATE TABLE operation
+(
+    id_operation         INT AUTO_INCREMENT PRIMARY KEY,
+    amount_operation      FLOAT NOT NULL,
+    description_operation VARCHAR(400)  NOT NULL,
+    date_operation        DATE  NOT NULL,
+    id_budget            INTEGER,
+    id_category           INTEGER,
+    id_operation_type      INTEGER,
+    FOREIGN KEY (id_budget) REFERENCES budget (id_budget),
+    FOREIGN KEY (id_category) REFERENCES category (id_category),
+    FOREIGN KEY (id_operation_type) REFERENCES operation_type (id_operation_type)
+);
