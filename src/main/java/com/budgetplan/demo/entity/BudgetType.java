@@ -15,4 +15,7 @@ public class BudgetType {
     private String nameBudgetType;
 
 
+//    public BudgetType(String nameBudgetType) {
+//    }
 }
+
