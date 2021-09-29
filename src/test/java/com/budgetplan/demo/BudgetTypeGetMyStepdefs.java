@@ -15,6 +15,7 @@ import static org.mockito.Mockito.when;
 
 public class BudgetTypeGetMyStepdefs {
 
+
     @Given("User perform GET operation for \\/budget-types")
     public void userPerformGETOperationForBudgetTypes() {
     }

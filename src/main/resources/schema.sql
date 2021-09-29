@@ -25,8 +25,6 @@ CREATE TABLE budget
     FOREIGN KEY (id_budget_type) REFERENCES budget_type (id_budget_type)
 );
 
-
-
 CREATE TABLE operation
 (
     id_operation         INT AUTO_INCREMENT PRIMARY KEY,
